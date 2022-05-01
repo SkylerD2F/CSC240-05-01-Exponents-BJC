@@ -41,12 +41,13 @@ namespace Exponents
 
             /* calculate the cube of the number and add it to the output - 
              * do this by creating a methd as in the squaring example above */
-            UxOutputLabel.Text = "cube is: " + Cube(num).ToString();
+            UxOutputLabel.Text  += "\nCube is: " + Cube(num).ToString();
 
             // OUTPUT
             // set the output to visible
 
             // turn the Go button off
+            UxGoButton.
         }
 
         public int Square(int num)
