@@ -37,7 +37,7 @@ namespace Exponents
              * do this with a method call that allows you to pass the number
              * and then receive the answer */
             UxOutputLabel.Text = "Square is: " + Square(num).ToString();
-            UxOutputLabel.Visible = true;
+            
 
             /* calculate the cube of the number and add it to the output - 
              * do this by creating a methd as in the squaring example above */
@@ -45,9 +45,9 @@ namespace Exponents
 
             // OUTPUT
             // set the output to visible
-
+            UxOutputLabel.Visible = true;
             // turn the Go button off
-            UxGoButton.
+            UxGoButton.Enabled = false;
         }
 
         public int Square(int num)
@@ -67,6 +67,11 @@ namespace Exponents
             // the input and output text should be emptied
             // turn the output to invisible
             // turn the Go button back on
+            UxGoButton.Enabled = true; 
+            UxInputTextBox.Text = string.Empty;
+            UxOutputLabel.Text = string.Empty;
+            UxOutputLabel.Visible = false;
+
         }
 
     }
