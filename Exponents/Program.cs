@@ -9,6 +9,8 @@ namespace Exponents
     {
         /// <summary>
         /// The main entry point for the application.
+        /// Brandon Collins
+        /// 5/1/2022
         /// </summary>
         [STAThread]
         static void Main()
